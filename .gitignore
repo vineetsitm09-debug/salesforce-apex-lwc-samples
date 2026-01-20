@@ -1,0 +1,7 @@
+# Salesforce
+node_modules/
+.sfdx/
+.vscode/
+*.log
+*.tmp
+.DS_Store
