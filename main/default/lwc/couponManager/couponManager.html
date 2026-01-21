@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Coupon Manager">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Coupon Code" value={couponCode} onchange={handleChange}></lightning-input>
+            <lightning-button label="Validate" variant="brand" onclick={validateCoupon} class="slds-m-top_small"></lightning-button>
+            <template if:true={isLoading}>
+                <lightning-spinner size="small"></lightning-spinner>
+            </template>
+            <template if:true={message}>
+                <p class="slds-m-top_small">{message}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
